@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<header id="header">
+    <div style="display: flex; justify-content: space-between; 
+    align-items: center;">
+        <img width="200px" id="logo" src="img/logo1.png" />
+        <h1 style="font-size: 24px;" id="titulo">Bem-vindo à Nossa Loja Online!</h1>
+        <img onclick="toggleCarrinho()" src="img/carrinho1.png" width="75px"/>
+    </div>
+</header>
+
+<div style="display: flex; height: 40vh; 
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(9,121,71,1) 45%, rgba(0,167,25,1) 82%, rgba(14,92,0,1) 100%);
+
+    justify-content: center;align-items: center;border-bottom: 4px solid black;">
+    <div style="width: 45%; display: block; ">
+        <h2 style="font-weight: bold;
+        font-size: 64px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">LUXEBEAUTY</h2>
+    </div>
+    <div style="width: 45%; display: block; text-align: justify;">
+        <p style="color: white;font-size: 16px; font-family: 'Courier New', Courier, monospace;
+            ">
+            Sua jornada de autocuidado começa aqui. Produtos que respeitam a natureza da sua pele e realçam sua beleza.
+        </p>
+    </div>
+</div>
+
+<div class="product-list">
+    <div class="product-item">
+        <img src="img/vitamina c1.png" alt="Solução Vitamina C">
+        <h3>Solução Vitamina C</h3>
+        <h5>Benefícios do produto:
+            Uniformiza o tom da pele
+            Reduz linhas de expressão
+            Melhora rugas e linhas finas
+            Melhora a firmeza e elasticidade da pele
+            Possui ação antioxidante
+            Não causa acne e não aumenta a oleosidade</h5>
+        <p>R$ 149,90</p>
+        <button onclick="adicionarAoCarrinho('Produto 1', 149.90)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="product-item">
+        <img src="img/espuma2.png" alt="Espuma Facial Control Skin">
+        <h3>Espuma Facial Control Skin</h3>
+        <h5>Benefícios do produto:
+            Ideal para peles oleosas, mistas e acneicas
+            Controla a oleosidade por até 4 horas
+            dia e/ou noite
+            Uniformiza o tom da pele
+            Mantém o pH fisiológico da pele
+            Controla a acne</h5>
+        <p>R$ 59,90</p>
+        <button onclick="adicionarAoCarrinho('Produto 2', 59.90)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="product-item">
+        <img src="img/control skin3.png" alt="Sérum Control Skin">
+        <h3>Sérum Control Skin</h3>
+        <h5>Benefícios do produto:
+            Ideal para peles oleosas e acneicas
+            Controla a oleosidade
+            Eficaz no tratamento da acne
+            Reduz inflamações e prevenindo novas lesões
+            Efeito calmante
+            Uniformiza o tom da pele e reduz manchas
+            Promove hidratação balanceada, sem deixar a pele oleosa</h5>
+        <p>R$ 79,90</p>
+        <button onclick="adicionarAoCarrinho('Produto 3', 79.90)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="product-item">
+        <img src="img/niacidamina4.png" alt="Solução Niacinamida">
+        <h3>Solução Niacinamida</h3>
+        <h5>Benefícios do produto:
+            Controla a oleosidade
+            Reduz a aparência de poros dilatados
+            Uniformiza o tom da pele e melhora a elasticidade
+            Suaviza linhas finas e reduz a vermelhidão
+            Fortalece a barreira da pele
+            Protege contra poluição e luz azul</h5>
+        <p>R$ 79,90</p>
+        <button onclick="adicionarAoCarrinho('Produto 1', 79.90)">Adicionar ao Carrinho</button>
+    </div>
+</div>
+
+<div class="product-list">
+    <div class="product-item">
+        <img src="img/niacidamina4.png" alt="Solução Niacinamida">
+        <h3>Solução Niacinamida</h3>
+        <h5>Benefícios do produto:
+            Controla a oleosidade
+            Reduz a aparência de poros dilatados
+            Uniformiza o tom da pele e melhora a elasticidade
+            Suaviza linhas finas e reduz a vermelhidão
+            Fortalece a barreira da pele
+            Protege contra poluição e luz azul</h5>
+        <p>R$ 79,90</p>
+        <button onclick="adicionarAoCarrinho('Produto 1', 79.90)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="product-item">
+        <img src="img/mascara argila5.png" alt="Máscara de Argila Control">
+        <h3>Máscara de Argila Control</h3>
+        <h5>Benefícios do produto:
+            Ideal para peles oleosas e acneicas
+            Uniformiza o tom da pele
+            Melhora a textura da pele
+            Controla a oleosidade por até 4 horas após o uso
+            Ajuda a reduzir lesões da acne
+            Pode ser usada 1 a 2 vezes por semana</h5>
+        <p>R$ 45,90</p>
+        <button onclick="adicionarAoCarrinho('Produto 2', 45.90)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="product-item">
+        <img src="img/primer6.png" alt="Primer Blur Effect">
+        <h3>Primer Blur Effect</h3>
+        <h5>Benefícios do produto:
+            Reduz a aparência de poros dilatados
+            Suaviza linhas finas
+            Controla a oleosidade do rosto por até 8 horas
+            Deixa a pele com aspecto aveludado e uniforme
+            Promove sensação macia e aveludada, com acabamento natural
+            Waterless e sustentável, produzido sem uso de água
+            Enriquecido com Niacinamida purificada, que hidrata e reduz manchas</h5>
+        <p>R$ 79,90</p>
+        <button onclick="adicionarAoCarrinho('Produto 3', 79.90)">Adicionar ao Carrinho</button>
+    </div>
+</div>
+
+<div class="product-list">
+    <div class="product-item">
+        <img src="img/vitamina c1.png" alt="Solução Vitamina C">
+        <h3>Solução Vitamina C</h3>
+        <h5>Benefícios do produto:
+            Uniformiza o tom da pele
+            Reduz linhas de expressão
+            Melhora rugas e linhas finas
+            Melhora a firmeza e elasticidade da pele
+            Possui ação antioxidante
+            Não causa acne e não aumenta a oleosidade</h5>
+        <p>R$ 149,90</p>
+        <button onclick="adicionarAoCarrinho('Produto 1', 149.90)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="product-item">
+        <img src="img/espuma2.png" alt="Espuma Facial Control Skin">
+        <h3>Espuma Facial Control Skin</h3>
+        <h5>Benefícios do produto:
+            Ideal para peles oleosas, mistas e acneicas
+            Controla a oleosidade por até 4 horas
+            dia e/ou noite
+            Uniformiza o tom da pele
+            Mantém o pH fisiológico da pele
+            Controla a acne</h5>
+        <p>R$ 59,90</p>
+        <button onclick="adicionarAoCarrinho('Produto 2', 59.90)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="product-item">
+        <img src="img/control skin3.png" alt="Sérum Control Skin">
+        <h3>Sérum Control Skin</h3>
+        <h5>Benefícios do produto:
+            Ideal para peles oleosas e acneicas
+            Controla a oleosidade
+            Eficaz no tratamento da acne
+            Reduz inflamações e prevenindo novas lesões
+            Efeito calmante
+            Uniformiza o tom da pele e reduz manchas
+            Promove hidratação balanceada, sem deixar a pele oleosa</h5>
+        <p>R$ 79,90</p>
+        <button onclick="adicionarAoCarrinho('Produto 3', 79.90)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="product-item">
+        <img src="img/niacidamina4.png" alt="Solução Niacinamida">
+        <h3>Solução Niacinamida</h3>
+        <h5>Benefícios do produto:
+            Controla a oleosidade
+            Reduz a aparência de poros dilatados
+            Uniformiza o tom da pele e melhora a elasticidade
+            Suaviza linhas finas e reduz a vermelhidão
+            Fortalece a barreira da pele
+            Protege contra poluição e luz azul</h5>
+        <p>R$ 79,90</p>
+        <button onclick="adicionarAoCarrinho('Produto 1', 79.90)">Adicionar ao Carrinho</button>
+    </div>
+</div>
+
+<div class="product-list">
+    <div class="product-item">
+        <img src="img/niacidamina4.png" alt="Solução Niacinamida">
+        <h3>Solução Niacinamida</h3>
+        <h5>Benefícios do produto:
+            Controla a oleosidade
+            Reduz a aparência de poros dilatados
+            Uniformiza o tom da pele e melhora a elasticidade
+            Suaviza linhas finas e reduz a vermelhidão
+            Fortalece a barreira da pele
+            Protege contra poluição e luz azul</h5>
+        <p>R$ 79,90</p>
+        <button onclick="adicionarAoCarrinho('Produto 1', 79.90)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="product-item">
+        <img src="img/mascara argila5.png" alt="Máscara de Argila Control">
+        <h3>Máscara de Argila Control</h3>
+        <h5>Benefícios do produto:
+            Ideal para peles oleosas e acneicas
+            Uniformiza o tom da pele
+            Melhora a textura da pele
+            Controla a oleosidade por até 4 horas após o uso
+            Ajuda a reduzir lesões da acne
+            Pode ser usada 1 a 2 vezes por semana</h5>
+        <p>R$ 45,90</p>
+        <button onclick="adicionarAoCarrinho('Produto 2', 45.90)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="product-item">
+        <img src="img/primer6.png" alt="Primer Blur Effect">
+        <h3>Primer Blur Effect</h3>
+        <h5>Benefícios do produto:
+            Reduz a aparência de poros dilatados
+            Suaviza linhas finas
+            Controla a oleosidade do rosto por até 8 horas
+            Deixa a pele com aspecto aveludado e uniforme
+            Promove sensação macia e aveludada, com acabamento natural
+            Waterless e sustentável, produzido sem uso de água
+            Enriquecido com Niacinamida purificada, que hidrata e reduz manchas</h5>
+        <p>R$ 79,90</p>
+        <button onclick="adicionarAoCarrinho('Produto 3', 79.90)">Adicionar ao Carrinho</button>
+    </div>
+</div>
+
+
+<div class="cart-details" id="cartDetails">
+    <h2>Carrinho de Compras</h2>
+    <ul id="cartItems">
+    </ul>
+    <p id="totalPrice">Total: R$ 0,00</p>
+    <button onclick="finalizarCompra()">Finalizar Compra</button>
+    <button onclick="limparCarrinho()">Limpar Carrinho</button>
+</div>
+
+<script>
+    let carrinho = [];
+
+    function adicionarAoCarrinho(nome, preco) {
+        carrinho.push({ nome, preco });
+        atualizarCarrinho();
+    }
+
+    function atualizarCarrinho() {
+        const cartItems = document.getElementById('cartItems');
+        const totalPrice = document.getElementById('totalPrice');
+        
+        cartItems.innerHTML = '';
+
+        let total = 0;
+        carrinho.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)}`;
+            cartItems.appendChild(li);
+            total += item.preco;
+        });
+
+        totalPrice.textContent = `Total: R$ ${total.toFixed(2)}`;
+    }
+
+    function toggleCarrinho() {
+        const cartDetails = document.getElementById('cartDetails');
+        cartDetails.style.display = cartDetails.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function finalizarCompra() {
+        alert("Compra finalizada com sucesso!");
+        limparCarrinho();
+    }
+
+    function limparCarrinho() {
+        carrinho = [];
+        atualizarCarrinho();
+        toggleCarrinho();
+    }
+    </script>
+    <footer style="background-color: #000000; padding: 20px 0; text-align: center; font-family: Arial, sans-serif; color: #ffffff; display: flex;justify-content: space-around;">
+        <div>
+            
+        </div>
+        <div>
+            <div>
+                <p>&copy; 2024 <strong>[Luxebeauty]</strong>. Todos os direitos reservados.</p>
+            </div>
+            <div style="margin-top: 20px;">
+                <p><strong>Atendimento ao Cliente:</strong> <a href="mailto:contato@luxebeauty.com" style="text-decoration: none; color: #ffffff;">contato@luxebeauty.com</a></p>
+            </div>
+            <div style="margin-top: 10px;">
+                <a href="/politica-de-privacidade" style="text-decoration: none; color: #ffffff; margin-right: 15px;">Política de Privacidade</a>
+                <a href="/termos-e-condicoes" style="text-decoration: none; color: #ffffff;">Termos e Condições</a>
+            </div>
+            <div style="margin-top: 20px; font-size: 14px; color: #ffffff;">
+                <p><em>Brilhe com uma pele saudável.</em></p>
+            </div>
+        </div>
+
+
+        <div style="justify-content: right;" id="style">
+            <a type="button" href="#header">
+                <img src="img/seta.png" style="width: 100px">
+            </a>
+        </div>
+
+    </footer>    
+    
+    </body>
+</html>
